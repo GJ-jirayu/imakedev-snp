@@ -1,0 +1,28 @@
+<project>
+
+
+	<target name="jar_kpi_service">
+		<!-- 
+			WebBoardServices/RestletServlet/webboardservices
+	        <mkdir dir="target/jar/project"/> 
+	     -->
+		
+		<jar destfile="../target/KPIService.jar">
+			
+			<!-- common -->
+			<fileset dir="../build/classes" includes="jdbc.properties" />
+			<fileset dir="../build/classes" includes="com/imake/moogle/lbs/backoffice/dto/*.class" />
+			<fileset dir="../build/classes" includes="com/imake/moogle/lbs/backoffice/service/*.class" />
+			<fileset dir="../build/classes" includes="com/imake/moogle/lbs/backoffice/service/impl/*.class" />
+		</jar>
+	</target>
+   <!-- 
+	<target name="jar_od_service">
+		<jar destfile="../target/operationDashboardService.jar">
+			<fileset dir="../bin" includes="com/moogle/lbs/operationdashboard/domain/*.class" />
+			<fileset dir="../bin" includes="com/moogle/lbs/operationdashboard/service/*.class" />
+			<fileset dir="../bin" includes="com/moogle/lbs/operationdashboard/service/impl/*.class" />
+		</jar>
+	</target>
+	-->
+</project>

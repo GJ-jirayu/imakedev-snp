@@ -1,0 +1,11 @@
+<project>
+
+
+	<target name="jar_kpi_ajax">
+		
+		<jar destfile="../target/kpiAjax.jar">
+			<!-- common -->
+			<fileset dir="../build/classes" includes="com/imake/moogle/lbs/ajax/KPIAjax.class" /> 
+		</jar>
+	</target>
+</project>

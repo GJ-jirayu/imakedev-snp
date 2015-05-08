@@ -1,0 +1,11 @@
+<project>
+
+
+	<target name="jar_billcycle_ajax">
+		
+		<jar destfile="../target/billCycleAjax.jar">
+			<!-- common -->
+			<fileset dir="../build/classes" includes="com/imake/lbs/ajax/BillCycleAjax.class" /> 
+		</jar>
+	</target>
+</project>
